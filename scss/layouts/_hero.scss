@@ -1,0 +1,127 @@
+.hero-block {
+  position: relative;
+}
+
+.page-block__body {
+  position: relative;
+  z-index: 2;
+  padding: 184px 0px 191px 0px;
+  max-width: 400px;
+}
+
+@media (max-width: 991.98px) {
+  .page-block__body {
+    padding: 120px 0px 191px 0px;
+  }
+}
+
+@media (max-width: 478.98px) {
+  .page-block__body {
+    padding: 115px 0px 160px 0px;
+  }
+}
+
+.page-block__body > *:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.group-hero__title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1.39; /* 137.931% */
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 478.98px) {
+  .group-hero__title {
+    font-size: 42px;
+  }
+}
+
+.group-hero__sutitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.2px;
+
+  color: #737373;
+}
+
+@media (max-width: 991.98px) {
+    .group-hero__sutitle{
+        color: #464646;
+    }
+}
+
+.page-block__buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -10px 0;
+}
+
+.group-block__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: #ff7b47;
+  padding: 5px 36px;
+  border-radius: 37px;
+  min-height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%; /* 200% */
+  letter-spacing: 0.2px;
+  transition: background-color 300ms ease 0ms;
+  margin: 10px 0;
+}
+
+@media (max-width: 478.98px) {
+  .group-block__button {
+    flex: 1 1 100%;
+  }
+}
+
+@media (min-width: 479px) {
+  .group-block__button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.group-block__button:hover {
+  background-color: rgb(242, 98, 41);
+}
+
+.group-block__button_border {
+  color: #0d5c63;
+  background-color: transparent;
+  border: 1px solid #0d5c63;
+  border-radius: 37px;
+}
+
+.group-block__button_border:hover {
+  background-color: rgba(13, 92, 99, 0.2);
+}
+
+.page-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1300px) {
+  .page-block__image img {
+    object-position: right;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .page-block__image {
+    opacity: 0.5;
+  }
+}

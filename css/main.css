@@ -357,10 +357,13 @@ button {
   }
 }
 .page__services-block {
+  background-color: #FAFAFA;
+}
+
+.services-block__container {
   position: relative;
   z-index: 2;
   margin-top: -111px;
-  background-color: #fafafa;
 }
 
 @media (min-width: 670px) {

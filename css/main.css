@@ -167,22 +167,22 @@ button {
 }
 
 .header__menu {
-  padding: 0 0 0 133px;
+  padding: 0 20px 0 133px;
 }
 
 @media (max-width: 991.98px) {
   .header__menu {
-    padding: 0 0 0 80px;
+    padding: 0 20px 0 80px;
   }
 }
 @media (max-width: 767.98px) {
   .header__menu {
-    padding: 0 0 0 50px;
+    padding: 0 20px 0 50px;
   }
 }
 @media (max-width: 479.98px) {
   .header__menu {
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 20px;
   }
 }
 .menu {
@@ -1371,4 +1371,73 @@ button {
 
 .social__item:not(:last-child) {
   margin: 0px 20px 0px 0px;
+}
+
+.dropbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  width: 140px;
+}
+
+.dropbtn {
+  background: url("/img/icons/ukraine-flag-icon.svg") no-repeat left center;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  height: 16px;
+}
+
+.dropbtn::after {
+  background: rgba(0, 0, 0, 0) url("/img/icons/chevron-down-solid.svg") no-repeat scroll center center;
+  content: "";
+  height: 10px;
+  position: absolute;
+  right: -10px;
+  top: 5px;
+  width: 16px;
+}
+
+.dropdown-content a:first-child {
+  background: url("/img/icons/ukraine-flag-icon.svg") no-repeat left center;
+  margin-bottom: 5px;
+}
+
+.dropdown-content a:last-child {
+  background: url("/img/icons/united-states-flag-icon.svg") no-repeat left center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 2px 0px 0px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

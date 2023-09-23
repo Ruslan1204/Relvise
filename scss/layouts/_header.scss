@@ -72,6 +72,10 @@
   color: #737373;
 }
 
+.menu__link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 479.98px) {
   .menu__link {
     font-size: 14px;
